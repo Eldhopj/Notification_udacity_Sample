@@ -1,5 +1,7 @@
 package com.example.eldho.notification_udacity_sample;
-/**Three functions 1.contentIntent 2. largeIcon 3.remindUserBecauseCharging*/
+/**
+ * Three functions 1.contentIntent 2. largeIcon 3.createNotifications
+ */
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -38,7 +40,7 @@ public class NotificationUtils {
     }
 
     //This method is responsible for creating the notification and notification channel in which the notification belongs to and displaying it
-    public static void remindUserBecauseCharging(Context context){
+    public static void createNotifications(Context context){
         /**Get reference to notification manager*/
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
         /**From Oreo we need to display notifications in the notification channel*/
